@@ -11,6 +11,11 @@ Implemented a camping booking system, user can sign up, login, look for camping 
 ## Usage
 *To be written.*
 
+## Colaborators 
+[vielato](https://github.com/vielato)
+[KonstantinaAn](https://github.com/KonstantinaAn)
+[solaunar](https://github.com/solaunar)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
