@@ -9,7 +9,17 @@ Implemented a camping booking system, user can sign up, login, look for camping 
 * [MySQL](https://dev.mysql.com/doc/)
 
 ## Usage
-*To be written.*
+### Requirements
+   * [MySQL](https://dev.mysql.com/doc/)
+   * [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+1. Clone the project to IntelliJ IDEA.
+2. Run the SQL in the mysql-steps.sql file.
+3. Run the app through IntelliJ.
+4. Type the address bellow at the browser's address bar:
+   ```sh
+   http://localhost:8080/
+   ```
+5. You're all set!
 
 ## Collaborators 
 * [vielato](https://github.com/vielato)
