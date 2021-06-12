@@ -1,6 +1,7 @@
 # camp_app
 Full stack web application project for the course of Information Systems Analysis and Design at AUEB. 
-Implemented a camping booking system, user can sign up, login, look for camping positions and make reservations if logged in. Data is saved at a local MySQL database.
+Implemented a camping booking system using the MVP (Model View Presenter) architecture. Data is saved at a local database.
+User can sign up, login, look for camping positions and make reservations if logged in.
 
 ### Built With
 * [HTML5](https://dev.w3.org/html5/html-author/)
