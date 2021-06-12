@@ -11,7 +11,7 @@ Implemented a camping booking system, user can sign up, login, look for camping 
 ## Usage
 *To be written.*
 
-## Colaborators 
+## Collaborators 
 * [vielato](https://github.com/vielato)
 * [KonstantinaAn](https://github.com/KonstantinaAn)
 * [solaunar](https://github.com/solaunar)
