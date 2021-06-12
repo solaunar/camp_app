@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Campooking</title>
+    </head>
+    <body>
+		<div class="userRegistrationForm">
+			<center><img src="images/logo.png" alt="Logo Campooking" style="width:160px;height:100px;"></center>
+			<!--navigation bar-->
+			<div class="topnav">
+			  <a href="/home">Αρχική</a>
+			  <a href="/camps">Κατασκηνώσεις</a>
+			  <a id = "connect" class="active" href="/signup">Εγγραφή</a>
+			  <a id = "connect" href="/signin">Σύνδεση</a>
+			</div>
+			<!--form section-->
+			<main>
+				<center><h3>Γίνε μέλος της παρέας μας, προκειμένου να κάνεις την πρώτη σου κράτηση</h3></center>
+				<form id="registration-form" action="/user" method="post">
+					<!--Enter first name-->
+					<label for="name">Όνομα*</label><br>
+					<input type="text" id="name" name="name" placeholder="Όνομα χρήστη , πχ Γιάννης" required><br>
+					<!--Enter last name-->
+					<label for="lastname">Επώνυμο*</label><br>
+					<input type="text" id="lastname" name="lastname" placeholder="Επώνυμο χρήστη, πχ Παπαδόπουλος" required><br>
+					<!--Enter e-mail-->
+					<label for="email">E-mail*</label><br>
+					<input type="email" id="email" name="email" placeholder="E-mail επικοινωνίας, πχ example@gmail.com" required><br>
+					<!--Enter home location-->
+					<label for="location">Διεύθυνση*</label><br>
+					<input type="text" id="location" name="location" placeholder="Διεύθυνση χρήστη, πχ Πατησσίων 103" required><br>
+					<!--Enter phone number-->
+					<label for="phone">Τηλέφωνο επικοινωνίας*</label><br>
+					<input type="tel" id="phone" name="phone" placeholder="Τηλέφωνο επικοινωνίας, πχ 123-456-7890..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+					<!--Enter username-->
+					<label for="username">Username*</label><br>
+					<input type="text" id="username" name="username" placeholder="Ψευδώνυμο χρήστη" required><br>
+					<!--Enter password-->
+					<label for="password">Password*</label><br>
+					<input type="password" id="password" name="password" placeholder="Κωδικός χρήστη" required><br>
+					<p style="font-size:9px;"><i>Τα πεδία με * είναι υποχρεωτικά</i></p>
+				</form>
+
+				<div class = "butts">
+					<a href="/home">
+						<button class="button" id = "cancel" style="vertical-align:middle">
+							<span>Ακύρωση</span>
+						</button>
+					</a>
+					<button  form="registration-form"  type="submit" class="button" id = "book" style="vertical-align:middle" >
+						<span>Εγγραφή</span>
+					</button>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

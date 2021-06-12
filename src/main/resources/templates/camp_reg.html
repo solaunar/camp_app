@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>Campooking</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <main>
+			<center><img src="images/logo.png" alt="Logo Campooking" style="width:160px;height:100px;"></center>
+				
+			<div class="topnav">
+				<a href="/home">Αρχική</a>
+				<a href="/camps">Κατασκηνώσεις</a>
+				<a class="active" href="/campReg">Καταχώρηση κατασκήνωσης</a>
+				<a id= "connect" href="/home">Αποσύνδεση</a>
+			</div>
+			
+			<header>
+				<h1>Καταχώρηση κατασκήνωσης</h1>
+			</header>
+			<div class = "form">
+            <form id="campReg" action="/camp" method="post">
+				<label for="ccode">Κωδικός κατασκήνωσης</label><br>
+				<input type="text" id="ccode" placeholder="Κωδικός 3 αριθμών, πχ 012..." name="ccode" pattern="[0-9]{3}" title="Must be a 3 number code."><br>
+				<label for="cname">Όνομα</label><br>
+				<input type="text" id="cname" placeholder="Επωνυμία κατασκήνωσης, πχ Camp Name..." name="cname"><br>
+				<label for="cdesc">Περιγραφή</label><br>
+				<input type="text" id="cdesc" placeholder="Περιγραφή κατασκήνωσης, πχ Our camp is great!..." name="cdesc"><br>
+				<label for="cloc">Τοποθεσία</label><br>
+				<input type="text" id="cloc" placeholder="Τοποθεσία κατασκήνωσης, πχ Town, Region, Country..." name="cloc"><br>
+				<label for="cbank">Τραπεζικοί λογαριασμοί</label><br>
+				<input type="text" id="cbank" placeholder="Λογαριασμοί για χρηματικές συναλλαγες, πχ 123456789 - BankX, 987654321 - BankY ..." name="cbank"><br>
+				<label for="cphone">Τηλέφωνο επικοινωνίας:</label><br>
+				<input type="tel" id="cphone" name="cphone" placeholder="Τηλέφωνο επικοινωνίας, πχ 123-456-7890..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+				<label for="cemail">Email </label><br>
+				<input type="email" id="cemail" placeholder="Email κατασκήνωσης, πχ camp@mail.com..." name="cemail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+				<label for="cadd">Διεύθυνση</label><br>
+				<input type="text" id="cadd" placeholder="Διεύθνση κατασκήνωσης, πχ Address, Town, Region, Country, PC 12345..." name="cadd"><br>
+			<!--Upload camping image
+				<div id="imgUpload">
+					<input type="file" (change)="onFileChanged($event)">
+					<img [src]="imgURL">
+					<button (click)="sendPic()"  value="upload">ΑΠΟΣΤΟΛΗ</button><br><br>
+				</div>
+			-->
+				<label for="cut">Παρεχόμενες Υπηρεσίες</label><br>
+				<input type="text" id="cut" placeholder="Παρεχόμενες υπηρεσίες κατασκήνωσης, πχ playground, gym..." name="cut"><br>
+					<label for="pcat">Κατηγορία θέσης Α:</label>
+					<label for="quantity">Αριθμός θέσεων:</label>
+					<input type="number" id="quantity" name="quantity" min="0" step= "1" placeholder="0">
+					<label for="field">Έκταση θέσης:</label>
+					<input type="number" id="field" name="field" min="1" step= "0.5" placeholder="1 τ.μ.">
+					<label for="cost">Κόστος διανυκτεύρεσης/ άτομο:</label>
+					<input type="number" id="cost" name="cost" min="1" step= "0.5" placeholder="1 €"><br>
+					<label for="pcat">Κατηγορία θέσης Β:</label>
+					<label for="quantity">Αριθμός θέσεων:</label>
+					<input type="number" id="quantity" name="quantity" min="0" step= "1" placeholder="0">
+					<label for="field">Έκταση θέσης:</label>
+					<input type="number" id="field" name="field" min="1" step= "0.5" placeholder="1 τ.μ.">
+					<label for="cost">Κόστος διανυκτεύρεσης/ άτομο:</label>
+					<input type="number" id="cost" name="cost" min="1" step= "0.5" placeholder="1 €"> <br>
+					<label for="pcat">Κατηγορία θέσης Γ:</label>
+					<label for="quantity">Αριθμός θέσεων:</label>
+					<input type="number" id="quantity" name="quantity" min="0" step= "1" placeholder="0">
+					<label for="field">Έκταση θέσης:</label>
+					<input type="number" id="field" name="field" min="1" step= "0.5" placeholder="1 τ.μ.">
+					<label for="cost">Κόστος διανυκτεύρεσης/ άτομο:</label>
+					<input type="number" id="cost" name="cost" min="1" step= "0.5" placeholder="1 €"> <br>
+			</form>
+			</div>
+			<div class = "butts">
+				<a href="/campReg">
+					<button class="button" id = "cancel" style="vertical-align:middle">
+					<span>Ακύρωση</span>
+					</button>
+				</a>
+			
+				<a href="/camp">
+					<button form="campReg" class="button" type="submit" id = "book" style="vertical-align:middle">
+					<span>Υποβολή</span>
+					</button>
+				</a>
+			</div>
+        </main>
+
+    </body>
+</html>

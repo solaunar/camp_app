@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Campooking</title>
+    </head>
+    
+	<body>
+		<center><img src="images/logo.png" alt="Logo Campooking" style="width:160px;height:100px;"></center>
+			
+		<div class="topnav">
+			<a href="/home">Αρχική</a>
+			<a href="/camps">Κατασκηνώσεις</a>
+			<a id = "connect" href="/signup">Εγγραφή</a>
+			<a class="active" id="connect" href="/signin">Σύνδεση</a>
+		</div>
+		
+		<main id="signin">
+			<center><h3>Συνδέσου για να κάνεις την κράτησή σου!</h3></center>	
+				<form id="user-signin" action="/signinUser" method="get">
+					<!--Enter e-mail-->
+					<label for="username">Όνομα Χρήστη</label><br>
+					<input type="text" id="username" name="username"><br>
+					<!--Enter password-->
+					<label for="password">Κωδικός</label><br>
+					<input type="password" id="password" name="password"><br>
+				</form>
+				<div class = "butts">
+					<a href="/home">
+					<button class="button" id = "cancel" style="vertical-align:middle">
+					<span>Ακύρωση</span>
+					</button></a>
+
+					<button form="user-signin" class="button" id = "book" style="vertical-align:middle">
+					<span>Σύνδεση</span>
+					</button>
+				</div>
+		</main>
+		
+	</body>
+	
+</html>

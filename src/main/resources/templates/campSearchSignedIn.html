@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Campooking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js">
+    </script>
+</head>
+<body>
+<main>
+    <center><img src="images/logo.png" alt="Logo Campooking" style="width:160px;height:100px;"></center>
+
+    <div class="topnav">
+        <a href="/mainSignedIn">Αρχική</a>
+        <a href="/campSignedIn" class="active" >Κατασκηνώσεις</a>
+        <a href="/reservation">Κράτηση</a>
+        <a id= "connect" href="/home">Αποσύνδεση</a>
+    </div>
+
+    <h3>Διάλεξε τοποθεσία και δες όλα τα camping</h3>
+    <select id="location" >
+        <!--<optgroup label="">-->
+        <option disabled selected value>-- Επέλεξε μία τοποθεσία --</option>
+        <option value="Ελαφόνησος" >Ελαφόνησος</option>
+        <option value="Πάρος">Πάρος</option>
+        <option value="Μεσσηνία">Μεσσηνία</option>
+    </select>
+
+    <div class = "butts">
+        <a href="/camps">
+            <button class="button" id = "cancel" style="vertical-align:middle">
+                <span>Αφαίρεση</span>
+            </button>
+        </a>
+        <button type="button" onclick="getCamping()"  class="button" id = "book" style="vertical-align:middle" >
+            <span>Εφαρμογή</span>
+        </button>
+    </div>
+    <div id="selectedByLocation">
+    </div>
+</main>
+
+<script src="/javascript/camp.js"></script>
+</body>
+</html>
