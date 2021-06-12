@@ -15,7 +15,8 @@ Implemented a camping booking system, user can sign up, login, look for camping 
 1. Clone the project to IntelliJ IDEA.
 2. Run the SQL in the mysql-steps.sql file.
 3. Run the app through IntelliJ.
-4. Type the address bellow at the browser's address bar:
+4. Open any browser.
+5. Type the address bellow at the browser's address bar:
    ```sh
    http://localhost:8080/
    ```
